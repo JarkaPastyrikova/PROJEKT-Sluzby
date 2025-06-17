@@ -70,22 +70,29 @@ html {
 
 
 body {
-  margin: 5% 10% 5% 10%;
   background-color: #FAFAFA;
-  font-family: "Montserrat", sans-serif;
   color: #8B8B8B;
-  font-weight: 500;
-  font-size: 16px;S
+  font-weight: 300;
+  font-size: 16px;
   line-height: 21px;
+  letter-spacing: 0;
+  margin: 5% 10% 5% 10%;
 }
 
 /* Typography */
+
+section {
+  margin-bottom: 4em;
+}
+
 h1 {
   font-size: 28px;
   font-weight: 600; 
-  color: #000000; 
+  color: #000000;
+  letter-spacing: 0; 
   line-height: 37px;
   margin: 0 0 1em;
+  
 }
 
 h2 {
@@ -93,22 +100,23 @@ h2 {
   font-weight: 600;
   color: #000000;
   line-height: 16px;
+  letter-spacing: 0;
   margin: 0 0 0.5em;
 }
 
 p {
-    color:#8B8B8B;
+  color:#8B8B8B;
 }
 
 /* Buttons */
 button {
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  padding: 10px 20px;
+  font-weight: 500;
+  line-height: 18px; 
+  letter-spacing: 0; 
+  border-radius: 22px;
   border: none;
-  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 .button--primary {
@@ -124,71 +132,112 @@ button {
 
 /* Hero section */
 .hero {
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   align-items: center;
   padding: 0;
   flex-wrap: wrap;
-  gap: 10px;
 }
 
-.hero-text {
-  flex: 1 1 40px;
+.line {
+  background-color: #407BFF;
+  width: 60px;
+  height: 3px;
 }
 
-.hero-image img {
+.hero__text {
+  flex: 0 0 45%;
+}
+
+.hero__image{
+  text-align: center;
+}
+
+.hero__image img {
   max-width: 100%;
   height: auto;
+
 }
 
-/* Service section */
-.services, .delegates {
-  padding:  0;
+/* Services section */
+.cards__group {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
 }
 
-.services-group {
+.services--right,
+.services--left {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
-  align-items: flex-start;
+  align-items: center;
+  gap: 3em; 
 }
 
-.service-box {
+.services--right {
+ flex-direction: row-reverse; 
+ 
+}
+
+.service__card {
   background-color: #FFFFFF;
   border-radius: 12px;
   padding: 1.5em;
   width: 200px;
+  min-height: 220px;
   text-align: center;
   box-shadow: 0 0 10px rgba(64, 123, 255, 0.1);
   font-size: 13px;
-  line-height: 17px;
+  line-height: 1.5;
   color: #8B8B8B;
+  flex: 1 1 180px; 
+  margin-bottom: 1em;
 }
 
-.service-box img {
+.service__card img {
   height: 32px;
   margin-bottom: 0.5em;
 }
 
-.text-column {
+/*.card__text {
+  font-weight: 300;
+  font-size: 13px;
+  color: #8B8B8B;
+  letter-spacing: 0;
+  line-height: 17;
+}*/
+
+.services__text {
   flex: 1;
   min-width: 250px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero, .services-group {
+  .hero,
+  .services--right,
+  .services--left {
     flex-direction: column;
     align-items: center;
   }
 
-  .hero-text, .text-column {
+  .hero__text,  
+  .services__text {
     text-align: center;
+    padding: 0 1em;
   }
 
-  .service-box {
+  .cards__group {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .service__card {
     width: 100%;
     max-width: 320px;
   }
 }
+
+  
 

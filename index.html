@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+<!--Sekce hero-->
   <section class="hero">
-    <div class="hero-text">
+    <div class="hero__text">
       <h1>Happy Travels</h1>
+      <div class="line"></div>
       <p>
         Specializujeme se na exotické destinace a výjimečné zážitkové pobyty. S námi se nikdy nudit nebudete. Ať už chcete zažít pořádný adrenalin nebo se jen opalovat na pláži.
       </p>
@@ -19,53 +23,56 @@
         <button class="button--secondary">Raději pohodu na pláži</button>
       </div>
     </div>
-    <div class="hero-image">
+    <div class="hero__image">
       <img src="images/happy-traveler.svg" alt="Happy Traveler">
     </div>
   </section>
 
-  <section class="services">
-    <div class="services-group">
-      <div class="service-box">
-        <img src="images/map-icon.svg" alt="">
-        <p>Naplánujeme zájezdy a výlety do celého světa.</p>
-      </div>
-      <div class="service-box">
-        <img src="images/cactus-icon.svg" alt="">
-        <p>Zajistíme exotické destinace a zážitkové pobyty.</p>
-      </div>
-      <div class="service-box">
-        <img src="images/plane-icon.svg" alt="">
-        <p>Seženeme nejlevnější letenky v daném termínu.</p>
-      </div>
-      <div class="text-column">
-        <h2>  naší cestovní kanceláře</h2>
-        <p>
-           Pomůžeme vám naplánovat vaši vysněnou dovolenou. Vybereme zajímavou destinaci a zajistíme pro vás vše od ubytování až po letenky.
-        </p>
-      </div>
+<!--Sekce služby s textem vpravo-->
+  <section class="services--right">
+    
+    <div class="services__text">
+      <h2> Služby naší cestovní kanceláře</h2>
+      <p>Pomůžeme vám naplánovat vaši vysněnou dovolenou. Vybereme zajímavou destinaci a zajistíme pro vás vše od ubytování až po letenky.</p>
     </div>
+
+    <div class="cards__group">
+      <div class="service__card">
+        <img src="images/map-icon.svg" alt="">
+        <p class="cards__text">Naplánujeme zájezdy a výlety do celého světa.</p>
+      </div>
+      <div class="service__card">
+        <img src="images/cactus-icon.svg" alt="">
+        <p class="cards__text">Zajistíme exotické destinace a zážitkové pobyty.</p>
+      </div>
+      <div class="service__card">
+        <img src="images/plane-icon.svg" alt="">
+        <p class="cards__text">Seženeme nejlevnější letenky v daném termínu.</p>
+      </div>
+    </div> 
   </section>
 
-  <section class="delegates">
-    <div class="text-column">
+  <!--Sekce služby s textem vlevo-->
+  <section class="services--left">
+    <div class="services__text">
       <h2>Služby našich delegátů na místě</h2>
       <p>
         Naši delegáti na místě se starají o váš pohodlí 24 hodin denně. Doporučí vám ty nejlepší výlety po okolí, zařídí pronájem slunečníku nebo auta.
       </p>
     </div>
-    <div class="services-group">
-      <div class="service-box">
+
+    <div class="cards__group">
+      <div class="service__card">
         <img src="images/palm-icon.svg" alt="palm-icon">
-        <p>Doporučíme ty nejhezčí destinace pro výlety.</p>
+        <p class="cards__text">Doporučíme ty nejhezčí destinace pro výlety.</p>
       </div>
-      <div class="service-box">
+      <div class="service__card">
         <img src="images/umbrella-icon.svg" alt="umbrella-icon">
-        <p>Objednáme slunečníky a plážová lehátka.</p>
+        <p class="cards__text">Objednáme slunečníky a plážová lehátka.</p>
       </div>
-      <div class="service-box">
+      <div class="service__card">
         <img src="images/van-icon.svg" alt="van-icon">
-        <p>Pronajmeme karavan nebo vůz na cestování.</p>
+        <p class="cards__text">Pronajmeme karavan nebo vůz na cestování.</p>
       </div>
     </div>
   </section>
